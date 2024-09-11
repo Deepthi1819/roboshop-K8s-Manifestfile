@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: roboshop-shippingweb
+  namespace: production-ns
+spec:
+  template:
+    metadata: 
+      labels: 
+        app: web
+    spec:
+      containers:
+        - image: clahandevops/clahan-image:latest
+          name: shipping-container
+          ports:
+            - containerPort: 80
+          resources: 
+            requests: 
+              memory: "250mi"
+              cpu: "150m"
+            limits: 
+              memory: "500mi"
+              cpu: "250m" 
+  replicas: 3
+  selector: 
+    matchLabels: 
+      app: web
+
