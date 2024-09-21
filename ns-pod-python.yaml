@@ -1,5 +1,5 @@
-Apiversion: v1
-kind: pod
+apiversion: v1
+kind: Pod
 metadata: 
    name: python-app
    namespace: production-ns
