@@ -1,4 +1,4 @@
-apiversion: v1
+Apiversion: v1
 kind: pod
 metadata: 
    name: python-app
@@ -8,4 +8,4 @@ spec:
     - name: python-pod
       image: deepthi1819/clahan-image:latest
       ports: 
-        - containers: 5000
+        - containerport: 80
