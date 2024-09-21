@@ -2,7 +2,7 @@ apiversion: v1
 kind: pod
 metadata: 
    name: python-app
-   namespace: python-ns
+   namespace: production-ns
 spec:
   containers: 
     - name: python-pod
