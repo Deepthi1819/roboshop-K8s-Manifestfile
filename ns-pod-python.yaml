@@ -1,0 +1,11 @@
+apiversion: v1
+kind: pod
+metadata: 
+   name: python-app
+   namespace: python-ns
+spec:
+  containers: 
+    - name: python-pod
+      image: deepthi1819/clahan-image:latest
+      ports: 
+        - containers: 5000
