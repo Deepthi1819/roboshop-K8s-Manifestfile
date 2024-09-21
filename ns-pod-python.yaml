@@ -8,4 +8,4 @@ spec:
     - name: python-pod
       image: deepthi1819/clahan-image:latest
       ports: 
-        - containerport: 80
+        - containerPort: 80
