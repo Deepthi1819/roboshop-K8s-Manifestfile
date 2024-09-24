@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata: 
   name: resto-web-rs
   labels:
-    app: sample
+    app: sample ##this label is for replicaset
 spec:
   replicas: 3
   selector: 
@@ -12,7 +12,7 @@ spec:
   template: 
     metadata:
       labels:
-        app: resto
+        app: resto # this labels are for template
     spec: 
       containers:
         - image: muralisocial123/resto-image:latest
