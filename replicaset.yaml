@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicaSet
+metdata: 
+  name: resto-web-rs
+  labels:
+    app: sample
+spec:
+  replicas: 3
+  selector: 
+    matchLabels:
+      app: resto
+  template: 
+    metdata:
+      labels:
+        app: resto
+    spec: 
+      containers:
+        - image: muralisocial123/resto-image:latest
+          name: sample-web
+          ports: 
