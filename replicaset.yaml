@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: ReplicaSet
-metdata: 
+metadata: 
   name: resto-web-rs
   labels:
     app: sample
@@ -10,7 +10,7 @@ spec:
     matchLabels:
       app: resto
   template: 
-    metdata:
+    metadata:
       labels:
         app: resto
     spec: 
